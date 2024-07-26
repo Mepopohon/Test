@@ -25,14 +25,14 @@ public class Main {
         String input = sc.nextLine();
 
         try {
-            String result = calculate(input);
+            String result = calc(input);
             System.out.println("Результат: " + result);
         } catch (Exception e) {
             System.out.println("Ошибка: " + e.getMessage());
         }
     }
 
-    private static String calculate(String input) throws Exception {
+    private static String calc(String input) throws Exception {
         String[] parts = input.split(" ");
         if (parts.length != 3) {
             throw new Exception("Некорректный формат ввода");
